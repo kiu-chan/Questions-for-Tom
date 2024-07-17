@@ -18,7 +18,7 @@
 #main1 {
   width: 902px;
   height: 1359px;
-  left: 1200px;
+  left: 705px;
   top: -335px;
   position: absolute;
 }
@@ -27,14 +27,14 @@
   width: 530px;
   height: 579px;
   left: 0px;
-  top: 453px;
+  top: 253px;
   position: absolute;
 }
 
 #inputContainer {
   position: absolute;
   top: 430px;
-  left: 850px;
+  left: 690px;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 10;
@@ -74,7 +74,7 @@
 #text {
   width: 672px;
   height: 158px;
-  left: 500px;
+  left: 350px;
   top: 300px;
   position: absolute;
   text-align: center;
@@ -89,7 +89,7 @@
   width: 415px;
   height: 336px;
   left: 419px;
-  top: 696px;
+  top: 420px;
   position: absolute;
 }
 
@@ -97,7 +97,7 @@
   width: 332px;
   height: 421px;
   left: 119px;
-  top: 397px;
+  top: 238px;
   position: absolute;
 }
 
