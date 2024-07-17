@@ -19,22 +19,40 @@
         <img id="main2" src="img2.png" />
         <img id="shiba" src="shiba.png" />
     </div>
-
+    
     <div id="videoContainer">
         <iframe id="youtubeVideo" src="https://www.youtube.com/embed/Jp9kutZen8c?si=E_z6Ps_oy0CSoa_z&autoplay=1&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-
-    <!-- Thêm thẻ audio -->
+    
     <audio id="audio" src="audio.mp3"></audio>
+    
+    <div id="overlayText">
+        <p>今宵遇君 幸甚</p>
+        <p>吾爱恒欢 愿之</p>
+        <p>春夏秋冬 偕老</p>
+        <p>人间繁华 共赏</p>
+    </br>
+    <p>就像宇宙中的爱的循环，我日复一日地爱你，永远选择你。我爱你，陶思源。</p>
+    <p>Haru</p>
+        </div>
 
     <script>
     document.getElementById('checkButton').addEventListener('click', function() {
         var input = document.getElementById('input').value;
-        var correctAnswer = "17/11/2002"; // Đặt câu trả lời đúng ở đây
-        
+        var correctAnswer = "17/11/2002";
+
         if (input.toLowerCase() === correctAnswer.toLowerCase()) {
             document.getElementById('videoContainer').style.display = 'block';
-            document.getElementById('audio').play(); // Phát âm thanh
+            document.getElementById('audio').play();
+            
+            // Hiển thị chữ
+            var overlayText = document.getElementById('overlayText');
+            overlayText.style.display = 'block';
+            
+            // Ẩn chữ sau 15 giây
+            // setTimeout(function() {
+            //     overlayText.style.display = 'none';
+            // }, 15000);
         } else {
             alert("Incorrect. Please try again! You can enter it in the format: dd/mm/yyyy. For example: 01/01/1000");
         }

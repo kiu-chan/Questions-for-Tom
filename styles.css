@@ -1,5 +1,6 @@
 html, body {
-  overflow: hidden;    width: 100vw; /* Đảm bảo chiều rộng khớp với cửa sổ trình duyệt */
+  overflow: hidden;    
+  width: 100vw;
   height: 100vh;
 }
 
@@ -124,4 +125,23 @@ html, body {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+#overlayText {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+#overlayText p {
+  margin: 0;
 }
