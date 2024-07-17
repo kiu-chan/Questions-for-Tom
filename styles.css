@@ -1,3 +1,8 @@
+html, body {
+  overflow: hidden;    width: 100vw; /* Đảm bảo chiều rộng khớp với cửa sổ trình duyệt */
+  height: 100vh;
+}
+
 #container {
   width: 100%;
   height: 100%;
