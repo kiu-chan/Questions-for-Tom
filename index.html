@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <img id="bg" src="bg.png" />
+        <img id="main1" src="img1.png" />
+        <div id="inputContainer">
+            <input type="text" id="input" placeholder="dd/mm/yyyy. For example: 01/01/1000">
+            <button id="checkButton">Check</button>
+        </div>
+        <div id="text">What is Haru's birthday?</div>
+        <img id="shiba1" src="shiba1.png" />
+        <img id="main2" src="img2.png" />
+        <img id="shiba" src="shiba.png" />
+    </div>
+
+    <div id="videoContainer">
+        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/Jp9kutZen8c?si=E_z6Ps_oy0CSoa_z&autoplay=1&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!-- Thêm thẻ audio -->
+    <audio id="audio" src="audio.mp3"></audio>
+
+    <script>
+    document.getElementById('checkButton').addEventListener('click', function() {
+        var input = document.getElementById('input').value;
+        var correctAnswer = "17/11/2002"; // Đặt câu trả lời đúng ở đây
+        
+        if (input.toLowerCase() === correctAnswer.toLowerCase()) {
+            document.getElementById('videoContainer').style.display = 'block';
+            document.getElementById('audio').play(); // Phát âm thanh
+        } else {
+            alert("Incorrect. Please try again! You can enter it in the format: dd/mm/yyyy. For example: 01/01/1000");
+        }
+    });
+    </script>
+</body>
+</html>
